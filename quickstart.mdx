@@ -1,80 +1,183 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: 'Quickstart Guide'
+description: 'Get started with Recepta AI in under 10 minutes'
+icon: 'rocket'
 ---
 
-## Get started in three steps
+## Create Your First AI Voice Agent
 
-Get your documentation site running locally and make your first customization.
+Get up and running with Recepta AI in just a few simple steps. This guide will walk you through creating your first AI voice agent and setting up a chat widget.
 
-### Step 1: Set up your local environment
-
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
+<Steps>
+  <Step title="Sign Up and Account Setup">
+    1. Visit [recepta.ai](https://recepta.ai) and create your account
+    2. Verify your email address
+    3. Complete the onboarding questionnaire about your business
     
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
+    <Note>
+      During signup, you'll be asked about your business type, target audience, and use cases. This helps us customize your initial agent configuration.
+    </Note>
+  </Step>
+
+  <Step title="Configure Your Business Information">
+    Set up your business profile to help the AI understand your context:
     
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
-
-### Step 2: Deploy your changes
-
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
+    - **Business Name & Description**: How your AI agent will introduce your company
+    - **Industry & Services**: What your business offers to customers  
+    - **Target Audience**: Who your typical customers are
+    - **Operating Hours**: When your agent should be active
     
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+    ```javascript
+    // Example business configuration
+    {
+      "name": "Acme Consulting",
+      "description": "We provide business consulting services for small businesses",
+      "industry": "Professional Services",
+      "services": ["Business Strategy", "Marketing", "Operations"],
+      "hours": "9 AM - 6 PM EST, Monday - Friday"
+    }
+    ```
+  </Step>
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+  <Step title="Choose Your AI Voice">
+    Select the perfect voice for your brand:
+    
+    - **Voice Options**: Choose from 20+ professional AI voices
+    - **Languages**: Support for English, Spanish, French, German, and more
+    - **Tone**: Professional, friendly, casual, or formal
+    - **Speed**: Adjust speaking rate for your audience
+    
+    <Tip>
+      Listen to voice samples in the dashboard to find the perfect match for your brand personality.
+    </Tip>
+  </Step>
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+  <Step title="Create Agent Prompts">
+    Define how your AI agent should behave:
+    
+    - **General Prompt**: Overall personality and behavior guidelines
+    - **Specific Scenarios**: How to handle common customer requests
+    - **Fallback Responses**: What to say when uncertain
+    - **Transfer Rules**: When to escalate to human agents
+    
+    ```text
+    Example General Prompt:
+    "You are a helpful customer service representative for Acme Consulting. 
+    Be professional but friendly. Always ask for the caller's name and 
+    reason for calling. If you can't answer a question, offer to have 
+    someone call them back within 24 hours."
+    ```
+  </Step>
 
-### Step 3: Go live
+  <Step title="Get Your Phone Number">
+    Set up a dedicated phone number for your AI agent:
+    
+    - **Choose Area Code**: Select from available numbers
+    - **Forward Calls**: Option to forward to existing numbers
+    - **Voicemail Setup**: Configure after-hours handling
+    - **Call Recording**: Enable for quality and training
+    
+    <Warning>
+      Phone numbers are allocated immediately. Make sure you're ready to start receiving calls before completing this step.
+    </Warning>
+  </Step>
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+  <Step title="Test Your Agent">
+    Before going live, test your configuration:
+    
+    1. Use the **Test Call** feature in the dashboard
+    2. Try different conversation scenarios
+    3. Verify voice quality and response accuracy
+    4. Check call transfer functionality
+    5. Test after-hours behavior
+    
+    <CardGroup cols={2}>
+      <Card title="Test Scenarios" icon="phone">
+        - New customer inquiry
+        - Existing customer support  
+        - Appointment scheduling
+        - Product/service questions
+      </Card>
+      <Card title="Quality Checklist" icon="check-circle">
+        - Voice sounds natural
+        - Responses are accurate
+        - Transfers work properly
+        - Business hours respected
+      </Card>
+    </CardGroup>
+  </Step>
+</Steps>
 
-## Next steps
+## Next Steps
 
-Now that you have your docs running, explore these key features:
+Congratulations! Your AI voice agent is now live. Here's what to do next:
 
 <CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
+  <Card
+    title="Set Up Chat Widget"
+    icon="message-circle"
+    href="/chat-widget/setup"
+  >
+    Add a chat widget to your website for additional customer touchpoints.
+  </Card>
+  <Card
+    title="Monitor Performance"
+    icon="chart-line"
+    href="/features/analytics"
+  >
+    Track calls, analyze conversations, and optimize your agent's performance.
+  </Card>
+  <Card
+    title="Add Knowledge Base"
+    icon="book-open"
+    href="/features/knowledge-base"
+  >
+    Upload FAQs, manuals, and documents to improve agent responses.
+  </Card>
+  <Card
+    title="Advanced Configuration"
+    icon="settings"
+    href="/agents/configuration"
+  >
+    Fine-tune prompts, set up webhooks, and customize advanced features.
+  </Card>
 </CardGroup>
 
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+## Common Issues
+
+<AccordionGroup>
+  <Accordion title="My agent isn't answering calls">
+    - Check that your agent status is "Active" in the dashboard
+    - Verify your phone number is properly configured
+    - Ensure you're calling during configured business hours
+    - Check your account billing status
+  </Accordion>
+  
+  <Accordion title="Voice quality issues">
+    - Test with different phones/networks
+    - Check your internet connection stability
+    - Try adjusting voice speed settings
+    - Contact support if issues persist
+  </Accordion>
+  
+  <Accordion title="Agent gives wrong information">
+    - Review and update your general prompt
+    - Add specific training for common scenarios
+    - Upload relevant knowledge base documents
+    - Use the feedback system to improve responses
+  </Accordion>
+</AccordionGroup>
+
+## Need Help?
+
+<Card
+  title="Get Support"
+  icon="life-ring"
+  href="mailto:support@recepta.ai"
+>
+  Our support team is available 24/7 to help you get started. Don't hesitate to reach out with questions!
+</Card>
+
+---
+
+**Ready to go live?** Your AI voice agent is now configured and ready to handle customer calls. Monitor the dashboard for incoming calls and performance metrics.
