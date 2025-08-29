@@ -43,10 +43,12 @@
           {
             "group": "Features",
             "pages": [
-              "features/phone-numbers",
+              "features/call-management",
               "features/call-logs",
               "features/knowledge-base",
-              "features/analytics"
+              "features/qa-system",
+              "features/analytics",
+              "features/phone-numbers"
             ]
           },
           {

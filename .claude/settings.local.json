@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\pages/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\pages/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\pages/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\pages/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\pages/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\pages/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\pages/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\pages/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\pages/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\pages/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\api/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\api/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\api/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\api/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\api/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\api/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\api/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\api/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\api/**)",
+      "Read(D:\\projects\\receptabuildout\\frontend\\src\\api/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
